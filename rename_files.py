@@ -8,7 +8,7 @@ from ldclient.config import Config
 
 
 # get the directory of existing files - path must be filled in with the location of the saved "Old" directory
-BASE_DIR = os.path.dirname("C:/Users/bryan.haviland.BLANCHARDSTOWN/OneDrive - Ocuco/Desktop/Old/")
+BASE_DIR = os.path.dirname("C:/foo/Old/")
 
 root = tk.Tk()
 root.withdraw()
@@ -23,10 +23,10 @@ def main():
    
    #please edit user name and email below
    user = {
-    "key": "testuser123",
-    "firstName": "test",
-    "lastName": "tester",
-    "email": "test@gmail.com"
+    "key": "testuser1234",
+    "firstName": "John",
+    "lastName": "Tester",
+    "email": "tests@gmail.com"
 }
    
    show_feature = client.variation("new-directory-selection",user, False)
@@ -36,7 +36,7 @@ def main():
        NEW_DIR = filedialog.askdirectory()
    else:
        #Set the path to the new directory where you would like to save the files
-       NEW_DIR = "C:/Users/bryan.haviland.BLANCHARDSTOWN/OneDrive - Ocuco/Desktop/New"
+       NEW_DIR = "C:foo/New"
 
    for filename in os.listdir(BASE_DIR):
         extension = filename[-3:]
