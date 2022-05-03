@@ -1,7 +1,18 @@
 # LaunchDarkly_Python
 Sample Python script with LaunchDarkly toggles
 
-This script will take 5 files from an "Old" directory and rename and move them to a "New" directory.  The feature flag that is being used will change the "New" path from being a hard plugged destination to opening a Windows Explorer menu for the use to select where to save the files.  The feature has been activated, but if you toggle the feature to off (which I am hoping you have access to) you can see it will revert back to using the hard plugged path.  
+This script will take 5 files from an "Old" directory and rename and move them to a "New" directory.  The feature flag that is being used will change the "New" path from being a hard plugged destination to opening a Windows Explorer menu for the use to select where to save the files when activated.  If the feature is not active you can see it will revert back to using the hard plugged path from the Python script.  
+
+Feature Flag Instructions 
+
+1. Build a new Feature Flag with Name "New Directory Selection"
+
+2. Add the key of new-directory-selection
+
+3. Save changes
+
+4. Copy Production SDK Key for use in file below
+
 
 Build Instructions 
 
@@ -9,7 +20,7 @@ Build Instructions 
 
 2. Run pip install requirements.txt
 
-3. In rename_files.py add the location of the directories you have created for both the "Old" and "New" directories. (The only comments in the script are at fields that should be edited by user).
+3. In rename_files.py add the location of the directories you have created for both the "Old" and "New" directories. Please also add the new SDK key at this time for the newly created toggle (The only comments in the script are at fields that should be edited by user).
 
 4. For tracking purposes please edit the user's first name, last name, and email 
 
