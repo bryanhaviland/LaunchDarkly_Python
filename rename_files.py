@@ -12,7 +12,8 @@ BASE_DIR = os.path.dirname("C:/foo/Old/")
 
 root = tk.Tk()
 root.withdraw()
-sdk_key = "sdk-0d4a4fa0-3e0a-444d-84fc-2b77e9a3999c"
+#replace SDK here
+sdk_key = " "
   
 
 def main(): 
